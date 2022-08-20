@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 //import { useDispatch, useSelector } from 'react-redux'
+import Navbar from './Navbar'
 import Regions from './Regions'
 import Locations from './Locations'
 import AddLocationForm from './AddLocationForm'
@@ -8,9 +9,8 @@ import AddLocationForm from './AddLocationForm'
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>Accessible Auckland</h1>
-      </header>
+     
+        <Navbar />
         <Routes>
           <Route path="/" element={<Regions />} />
           <Route path="region/:region_name/:id" element={<Locations />} />
