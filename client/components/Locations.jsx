@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
+import styles from '../styles/locations.module.scss'
 
 import { fetchLocations } from '../actions'
 
@@ -19,11 +20,12 @@ function Locations() {
   })
   return (
     <>
-      <div className="locations-container">
-        <ul>
+      <div >
+        <ul className={styles.locationContainer}>
           {locationArr?.map((location) => (
             <li key={location.id}>
-              {location.name}
+              <h2>{location.name}</h2>
+              <img src={location.image} alt="" />
               <p>{location.description}</p>
               <p>{location.address}</p>
               <p>{location.openingHours}</p>
@@ -35,9 +37,9 @@ function Locations() {
             </li>
           ))}
         </ul>
-        <Link to={`/addlocation`}>
+        {/* <Link to={`/addlocation`}>
           <button>Add Location</button>
-        </Link>
+        </Link> */}
       </div>
     </>
   )
