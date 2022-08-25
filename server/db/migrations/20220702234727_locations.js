@@ -10,6 +10,7 @@ exports.up = function (knex) {
     table.text('address')
     table.text('opening_hours')
     table.text('website_url')
+    table.text('image')
     table.integer('wheelchair_compatible')
     table.integer('ramps')
     table.integer('elevator')
