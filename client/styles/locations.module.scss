@@ -12,15 +12,19 @@
   }
 
 li{
-    width: 20rem;
+    width: 22rem;
     margin: 2vw;
     list-style: none;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
   img{
-    width: 20rem;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   div{
-margin-bottom: 1vw;}
+    margin-bottom: 1vw;
+    padding-left: 10px;}
 }
 .tick{
 font-weight: 900;
