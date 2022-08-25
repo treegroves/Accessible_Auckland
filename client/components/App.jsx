@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Regions from './Regions'
 import Locations from './Locations'
+import Location from './Location'
 import AddLocationForm from './AddLocationForm'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Regions />} />
           <Route path="region/:region_name/:id" element={<Locations />} />
+          <Route path="region/:region_name/:id/:name" element={<Location />} />
           <Route path="/addlocation" element={<AddLocationForm />} />
         </Routes>
       
