@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from '../styles/locations.module.scss'
 
@@ -24,16 +24,24 @@ function Locations() {
         <ul className={styles.locationContainer}>
           {locationArr?.map((location) => (
             <li key={location.id}>
-              <h2>{location.name}</h2>
               <img src={location.image} alt="" />
-              <p>{location.description}</p>
-              <p>{location.address}</p>
-              <p>{location.openingHours}</p>
-              <p>{location.websiteUrl}</p>
-              <p>{location.wheelchairCompatible}</p>
-              <p>{location.ramps}</p>
-              <p>{location.elevator}</p>
-              <p>{location.accessibleToilets}</p>
+              <h2>{location.name}</h2>
+              <div><h4>About:</h4>{location.description}</div>
+              <div><h4>Location:</h4>{location.address}</div>
+              <div><h4>Opening Hours:</h4>{location.openingHours}</div>
+              <div><h4>Website:</h4><a href={location.websiteUrl} target="_blank" rel="noreferrer">
+                 aucklandmuseum.com
+              </a></div>
+  
+              <h4>Facilities:</h4>
+              {location.wheelchairCompatible == 1 ? <p>Wheelchair Accessible: <span className={styles.tick} alt="Yes">&#10003;</span></p> : <p>Wheelchair Accessibility: <span className={styles.cross} alt="No">&#10005;</span></p>}
+
+              {location.ramps == 1 ? <p>Ramps: <span className={styles.tick} alt="Yes">&#10003;</span></p> : <p>Ramps: <span className={styles.cross} alt="No">&#10005;</span></p>}
+
+              {location.elevator == 1 ? <p>Elevator: <span className={styles.tick} alt="Yes">&#10003;</span></p> : <p>Elevator: <span className={styles.cross} alt="No">&#10005;</span></p>}
+             
+              {location.accessibleToilets == 1 ? <p>Accessible Toilets: <span className={styles.tick} alt="Yes">&#10003;</span></p> : <p>Accessible Toilets: <span className={styles.cross} alt="No">&#10005;</span></p>}
+              
             </li>
           ))}
         </ul>

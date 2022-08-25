@@ -15,10 +15,20 @@ li{
     width: 20rem;
     margin: 2vw;
     list-style: none;
-text-align: center;
 
   img{
     width: 20rem;
   }
+  div{
+margin-bottom: 1vw;}
+}
+.tick{
+font-weight: 900;
+color: rgb(6, 250, 6);
+}
+
+.cross{
+font-weight: 900;
+color: rgb(255, 17, 0);
 }
 }
