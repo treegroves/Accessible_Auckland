@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable('regions', function (table) {
     table.increments('id')
     table.string('region_name')
-    table.string('image')
+    table.string('images')
   })
 }
 
