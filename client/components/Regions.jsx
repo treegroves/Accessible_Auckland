@@ -23,7 +23,7 @@ function Regions() {
             <li>
             <Link to={`/region/${region.region_name}/${region.id}`}>
               <img
-                src={region.image}
+                src={region.images}
                 className="img-thumbnail"
                 alt="..."
               />
