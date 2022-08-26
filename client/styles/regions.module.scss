@@ -1,18 +1,37 @@
+@import '../styles/_breakpoints.scss';
 .container{
- margin:auto;
-  width: 80%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
+  justify-content:center;
+align-items: center;
+  
+ul{
+ margin-left: 10px;
+margin-right:10px;
   li {
     list-style: none;
     flex-basis: 350px;
-   img {
-    height: 500px;
-    width: 400px}
+    
+      h2 {
+        text-align: center;}
+      img {
+        height: 20em;
+        width: 35em;
+        border-radius: 10px;
+        @include xs {
+          height: 45vw;
+          width: 85vw;
+        }
+        @include md{
+          height: 26vw;
+          width: 45vw;
+        }
+        @include xl{
+          height: 20em;
+          width: 34em;
+        }
+      }
+    }
   }
-
 }

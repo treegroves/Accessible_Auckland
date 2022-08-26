@@ -13,7 +13,7 @@ function App() {
      
         <Navbar />
         <Routes>
-          <Route path="/" element={<Regions />} />
+          <Route path="/region" element={<Regions />} />
           <Route path="region/:region_name/:id" element={<Locations />} />
           <Route path="region/:region_name/:id/:name" element={<Location />} />
           <Route path="/addlocation" element={<AddLocationForm />} />

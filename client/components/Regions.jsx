@@ -21,13 +21,14 @@ function Regions() {
             src={region.region_name}
           >
             <li>
-            <Link to={`/region/${region.region_name}/${region.id}`}>
-              <img
+              <h2>{region.region_name} Auckland</h2>
+              <Link to={`/region/${region.region_name}/${region.id}`}>
+                <img
                 src={region.images}
-                className="img-thumbnail"
+                
                 alt="..."
-              />
-            </Link>
+                />
+              </Link>
             </li>
           </ul>
         ))}
