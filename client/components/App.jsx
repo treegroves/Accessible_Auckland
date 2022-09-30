@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/region" element={<Regions />} />
           <Route path="/region/:regionId/:id" element={<Locations />} />
-          <Route path="/region/:regionId/:id/:name" element={<Location />} />
+          <Route path="/region/:regionName/:id/:name" element={<Location />} />
           <Route path="/addlocation" element={<AddLocationForm />} />
         </Routes>
       
