@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const ImageSlider = ({slides})  => {
   const [currentSlide, setCurrentIndex] = useState(0);
@@ -66,6 +67,7 @@ const ImageSlider = ({slides})  => {
     setCurrentIndex(slideIndex);
   }
   return(
+
     <div style={sliderStyles}>
       <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
       <div style={rightArrowStyles} onClick={goToNext}>❱</div>
@@ -75,6 +77,7 @@ const ImageSlider = ({slides})  => {
         ))}
       </div>
     </div>
+
   )}
 
 export default ImageSlider;
