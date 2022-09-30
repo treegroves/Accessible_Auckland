@@ -38,15 +38,15 @@ const ImageSlider = ({slides})  => {
     cursor: "pointer",
   };
 
-  const dotsContainerStyles = {
-    display: "flex",  
-    justifyContent: "center",
-  }
-  const dotStyles = {
-    margin: '0 3px',
-    cursor: 'pointer',
-    fontSize: '20px',
-  }
+  // const dotsContainerStyles = {
+  //   display: "flex",  
+  //   justifyContent: "center",
+  // }
+  // const dotStyles = {
+  //   margin: '0 3px',
+  //   cursor: 'pointer',
+  //   fontSize: '20px',
+  // }
 
 
 
@@ -70,9 +70,9 @@ const ImageSlider = ({slides})  => {
     <div style={sliderStyles}>
       <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
       <div style={rightArrowStyles} onClick={goToNext}>❱</div>
-      <a href={slides[currentSlide].link}>
+      <Link to={slides[currentSlide].link}>
         <div style={slideStyles}></div>
-      </a>
+      </Link>
       {/* <div style={dotsContainerStyles}>{slides.map((slide, slideIndex) => (
         <div style={dotStyles} onClick={() => goToSlide(slideIndex)} key={slideIndex}>●</div>
         ))}
