@@ -12,7 +12,6 @@ const ImageSlider = ({slides})  => {
   const slideStyles = {
       width: '100%',
       height: '100%',
-      borderRadius: '10px',
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundImage: `url(${slides[currentSlide].url})`,
@@ -71,11 +70,13 @@ const ImageSlider = ({slides})  => {
     <div style={sliderStyles}>
       <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
       <div style={rightArrowStyles} onClick={goToNext}>❱</div>
-      <div style={slideStyles}></div>
-      <div style={dotsContainerStyles}>{slides.map((slide, slideIndex) => (
+      <a href={slides[currentSlide].link}>
+        <div style={slideStyles}></div>
+      </a>
+      {/* <div style={dotsContainerStyles}>{slides.map((slide, slideIndex) => (
         <div style={dotStyles} onClick={() => goToSlide(slideIndex)} key={slideIndex}>●</div>
         ))}
-      </div>
+      </div> */}
     </div>
 
   )}
