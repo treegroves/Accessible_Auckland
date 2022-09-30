@@ -6,16 +6,21 @@ import Regions from './Regions'
 import Locations from './Locations'
 import Location from './Location'
 import AddLocationForm from './AddLocationForm'
+import Carousel from './Carousel.jsx'
+import Home from './Home'
 
 function App() {
   return (
     <>
      
         <Navbar />
+        
+        
         <Routes>
-          <Route path="/" element={<Regions />} />
-          <Route path="region/:region_name/:id" element={<Locations />} />
-          <Route path="region/:region_name/:id/:name" element={<Location />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/region" element={<Regions />} />
+          <Route path="/region/:region_name/:id" element={<Locations />} />
+          <Route path="/region/:region_name/:id/:name" element={<Location />} />
           <Route path="/addlocation" element={<AddLocationForm />} />
         </Routes>
       
