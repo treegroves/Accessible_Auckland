@@ -6,16 +6,25 @@
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
-  
-ul{
- margin-left: 10px;
-margin-right:10px;
-  li {
+  .regionImgGrid{
+  margin: 10px;
+  position: relative;
+   
+    .regionCard {
     list-style: none;
     flex-basis: 350px;
-    @include interactimg;
-      h2 {
-        text-align: center;}
+    color: rgb(0, 0, 0);
+    // @include interactimg;
+      p {
+        position: absolute;
+        bottom: 10px;
+        left: 2vw; 
+        color: white;
+        font-size: large;
+      }
+      p:hover{
+      
+      }
       img {
         height: 20em;
         width: 35em;
@@ -35,5 +44,14 @@ margin-right:10px;
         }
       }
     }
+.regionCard:hover p{
+      background-color: white;       
+      color: black;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      transition: 0.5s all ease;
+      cursor: pointer;
+}
   }
 }
