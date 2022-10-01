@@ -7,9 +7,11 @@ export default function Navbar() {
   return (
     <nav className={styles.navContainer}>
       <h1 className={styles.logo}>Accessible Auckland</h1>
-      {/* <div className="links">
+      <div className={styles.links}>
         <Link to="/">Home</Link>
-      </div> */}
+        <Link to="/region">Regions</Link>
+        <Link to="#">About</Link>
+      </div>
     </nav>
   )
 }
