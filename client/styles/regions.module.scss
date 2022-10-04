@@ -1,11 +1,16 @@
 @import '../styles/_breakpoints.scss';
 @import '../styles/_interactImg.scss';
 .container{
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  align-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content:center;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+
   .regionImgGrid{
   margin: 10px;
   position: relative;
@@ -28,7 +33,6 @@
       img {
         height: 20em;
         width: 35em;
-        border-radius: 10px;
         
         @include xs {
           height: 45vw;

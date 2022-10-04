@@ -12,7 +12,7 @@ function Regions() {
   }, [])
 
   return (
-    
+   
       <div className={styles.container}>
         {regions?.map((region) => (
           <div
