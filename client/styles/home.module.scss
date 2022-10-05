@@ -1,15 +1,47 @@
-.backgroundImg {
-  display: flex;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+// .backgroundImg {
+//     display: flex;
+//     position: absolute;
+//     width: 100vw;
+//     height: 100vh;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//     img{ 
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover
+//     }
+
+// }
+
+
+.intro{
+width: 50vw;
+height: 70vh;
+position: absolute;
+top: 8rem;
+padding: 2vw;
+// left: 10vw;
+font-size: 1.5vw;
+color: rgb(255, 255, 255);
+
+background-color: rgba(0, 0, 0, 0.5);
+border-bottom-right-radius: 500px;
+
+}
+
+.imageContainer{
+
+//  display: flex;
+//     position:relative;
+//     width: 100vw;
+//     height: 100vh;
+//     justify-content: center;
+//     align-items: center;
+//     overflow-y: auto;
     img{ 
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       object-fit: cover;
     }
-
 }
