@@ -22,9 +22,13 @@ export default function Home() {
       {/* <Carousel />
       <Regions /> */}
     
-  </div>
-  <div className={styles.imageContainer}>
+    </div>
+    <div className={styles.imageContainer}>
       <img src="/images/homebackground.jpg" alt="" />
+    </div>
+    <div className={styles.carouselContainer}>
+      <h2>Featured Locations</h2>
+      <Carousel />
     </div>
 </div>
   )
