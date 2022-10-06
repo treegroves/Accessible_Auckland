@@ -52,6 +52,17 @@ router.post('/', (req, res) => {
       res.sendStatus(500)
     })
 })
+
+router.get('/search', (req, res) => {
+  const search = req.query.search
+  db.searchLocations(search)
+    .then((locations) => {
+      res.json({ locations })
+    })
+    .catch(() => {
+      res.sendStatus(500)
+    })
+})
 //add post route
 //db function to insert
 //react to web api
