@@ -68,7 +68,15 @@ function addNewLocation(location, db = connection) {
 }
 
 //update location
+
+// search locations
+
+function searchLocations(search, db = connection) {
+  return db('locations').whereLike('name', `%${search}%`)
+}
+
 module.exports = {
   getLocations,
   addNewLocation,
+  searchLocations,
 }
