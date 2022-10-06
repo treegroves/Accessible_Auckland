@@ -27,7 +27,6 @@ export default function Home() {
       <img src="/images/homebackground.jpg" alt="" />
     </div>
     <div className={styles.carouselContainer}>
-      <h2>Featured Locations</h2>
       <Carousel />
     </div>
 </div>
