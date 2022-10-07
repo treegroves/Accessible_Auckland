@@ -8,6 +8,7 @@ import Location from './Location'
 import AddLocationForm from './AddLocationForm'
 import Carousel from './Carousel.jsx'
 import Home from './Home'
+import Footer from './Footer'
 import Results from './Results'
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/addlocation" element={<AddLocationForm />} />
           <Route path="/results" element={<Results />} />
         </Routes>
-      
+        <Footer />
     </>
   )
 }
