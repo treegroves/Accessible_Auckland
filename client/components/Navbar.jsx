@@ -4,6 +4,9 @@ import { Link, useNavigate } from "react-router-dom"
 import styles from "../styles/navbar.module.scss"
 import { useDispatch } from "react-redux"
 import { searchLocations } from '../actions'
+import { BsSearch } from "react-icons/bs"
+
+
 
 export default function Navbar() {
 const navigate = useNavigate()
@@ -36,7 +39,9 @@ console.log("hello" + location.id)
             value={search}
             onChange={(event) => setSearch(event.target.value) } />
 
-          <button></button>
+          <button>
+            <BsSearch />
+          </button>
         </form>
       </div>
     </nav>
