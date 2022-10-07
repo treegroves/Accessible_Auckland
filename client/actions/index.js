@@ -1,7 +1,11 @@
 //import request from 'superagent'
 
 import { getRegions } from '../apis/regions'
-import { getLocations, addLocation } from '../apis/locations'
+import {
+  getLocations,
+  addLocation,
+  searchLocationsData,
+} from '../apis/locations'
 
 export const RECEIVE_REGIONS = 'RECEIVE_REGIONS'
 export const RECEIVE_LOCATIONS = 'RECEIVE_LOCATIONS'
@@ -50,6 +54,15 @@ export function createLocation(location) {
   return (dispatch) => {
     return addLocation(location).then((addedLocation) => {
       dispatch(makeLocation(addedLocation))
+      return null
+    })
+  }
+}
+
+export function searchLocations(search) {
+  return (dispatch) => {
+    return searchLocationsData(search).then((locations) => {
+      dispatch(receiveLocations(locations))
       return null
     })
   }
