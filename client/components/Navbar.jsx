@@ -14,7 +14,9 @@ function handleSubmit(event) {
   event.preventDefault()
   dispatch(searchLocations(search))
   setSearch('')
-  navigate(`/region/${location.regionId}/${location.id}/${search}`)
+  navigate(`/results`)
+  // navigate(`/region/${location.regionId}/${location.id}/${search}`)
+console.log("hello" + location.id)
 }
 
   return (
