@@ -23,7 +23,7 @@ console.log("hello" + location.id)
 }
 
   return (
-    <nav className={styles.navContainer}>
+    <nav id="navbar" className={styles.navContainer}>
       <h1 className={styles.logo}>Accessible Auckland</h1>
       <div className={styles.links}>
         <Link to="/">Home</Link>
