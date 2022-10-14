@@ -29,6 +29,7 @@ router.post('/', (req, res) => {
     elevator,
     accessibleToilets,
     regionId,
+    regionName,
   } = req.body.location
   return db
     .addNewLocation({
@@ -43,6 +44,7 @@ router.post('/', (req, res) => {
       elevator,
       accessibleToilets,
       regionId,
+      regionName,
     })
     .then((newLocation) => {
       res.json(newLocation)
