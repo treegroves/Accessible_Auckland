@@ -14,3 +14,11 @@ export function addLocation(location) {
     .send({ location })
     .then((res) => res.body)
 }
+
+export function searchLocationsData(search) {
+  return request
+    .get(rootUrl + `${rootUrl}/locations/search?search=${search}`)
+    .then((res) => {
+      return res.body.locations
+    })
+}

@@ -1,18 +1,62 @@
+@import '../styles/_breakpoints.scss';
+@import '../styles/_interactImg.scss';
 .container{
- margin:auto;
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content:center;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 10px;
   justify-content: center;
 
-  li {
+  .regionImgGrid{
+padding-top: 8rem;
+  margin: 10px;
+  position: relative;
+   
+    .regionCard {
     list-style: none;
     flex-basis: 350px;
-   img {
-    height: 500px;
-    width: 400px}
+    color: rgb(0, 0, 0);
+    // @include interactimg;
+      p {
+        position: absolute;
+        bottom: 10px;
+        left: 2vw; 
+        color: white;
+        font-size: large;
+      }
+      p:hover{
+      
+      }
+      img {
+        height: 20em;
+        width: 35em;
+        
+        @include xs {
+          height: 45vw;
+          width: 85vw;
+        }
+        @include md{
+          height: 26vw;
+          width: 45vw;
+        }
+        @include xl{
+          height: 20em;
+          width: 34em;
+        }
+      }
+    }
+.regionCard:hover p{
+      background-color: white;       
+      color: black;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      transition: 0.5s all ease;
+      cursor: pointer;
+}
   }
-
 }

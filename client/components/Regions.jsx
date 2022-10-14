@@ -12,24 +12,26 @@ function Regions() {
   }, [])
 
   return (
-    
+   
       <div className={styles.container}>
         {regions?.map((region) => (
-          <ul
+          <div
             className={styles.regionImgGrid}
             key={region.id}
             src={region.region_name}
           >
-            <li>
-            <Link to={`/region/${region.region_name}/${region.id}`}>
-              <img
-                src={region.image}
-                className="img-thumbnail"
+
+            <div className={styles.regionCard}>
+              <p>{region.region_name} Auckland</p>
+              <Link to={`/region/${region.region_name}/${region.id}`}>
+                <img
+                src={region.images}
+                
                 alt="..."
-              />
-            </Link>
-            </li>
-          </ul>
+                />
+              </Link>
+            </div>
+          </div>
         ))}
       </div>
     
