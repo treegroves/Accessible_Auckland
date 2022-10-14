@@ -16,6 +16,7 @@ exports.up = function (knex) {
     table.integer('elevator')
     table.integer('accessible_toilets')
     table.integer('region_id')
+    table.text('region_name')
   })
 }
 

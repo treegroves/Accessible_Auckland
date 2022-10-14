@@ -29,7 +29,7 @@ function Locations() {
             
               <img className={styles.locationImg}src={location.image} alt={location.name} onMouseDown={() => navigate(`/region/${location.regionName}/${location.id}/${location.name}`)} role="button" />
              
-              <div><h2 onMouseDown={() => navigate(`/region/${location.id}/${location.name}`)} role="button">{location.name}</h2></div>
+              <div><h2 onMouseDown={() => navigate(`/region/${location.regionName}/${location.id}/${location.name}`)} role="button">{location.name}</h2></div>
               <div><h4>About:</h4>{location.description}</div>
               <div><h4>Location:</h4>{location.address}</div>
               

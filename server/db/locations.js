@@ -16,7 +16,8 @@ function getLocations(db = connection) {
     'ramps',
     'elevator',
     'accessible_toilets as accessibleToilets',
-    'region_id as regionId'
+    'region_id as regionId',
+    'region_name as regionName'
   )
 }
 
@@ -34,6 +35,7 @@ function addNewLocation(location, db = connection) {
     elevator,
     accessibleToilets,
     regionId,
+    regionName,
   } = location
   return db('locations')
     .insert({
@@ -48,6 +50,7 @@ function addNewLocation(location, db = connection) {
       elevator,
       accessible_toilets: accessibleToilets,
       region_id: regionId,
+      region_name: regionName,
     })
     .then(([id]) => {
       return {
@@ -63,6 +66,7 @@ function addNewLocation(location, db = connection) {
         elevator,
         accessibleToilets,
         regionId,
+        regionName,
       }
     })
 }

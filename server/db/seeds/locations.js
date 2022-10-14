@@ -18,6 +18,7 @@ exports.seed = function (knex) {
           elevator: 1,
           accessible_toilets: 1,
           region_id: 3,
+          region_name: 'central',
         },
         {
           id: 2,
@@ -33,6 +34,7 @@ exports.seed = function (knex) {
           elevator: 1,
           accessible_toilets: 1,
           region_id: 3,
+          region_name: 'central',
         },
         {
           id: 3,
@@ -48,6 +50,7 @@ exports.seed = function (knex) {
           elevator: 4,
           accessible_toilets: 1,
           region_id: 2,
+          region_name: 'south',
         },
         {
           id: 4,
@@ -63,6 +66,7 @@ exports.seed = function (knex) {
           elevator: 1,
           accessible_toilets: 1,
           region_id: 5,
+          region_name: 'west',
         },
       ])
     })
