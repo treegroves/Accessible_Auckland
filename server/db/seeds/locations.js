@@ -68,6 +68,56 @@ exports.seed = function (knex) {
           region_id: 5,
           region_name: 'west',
         },
+        {
+          id: 5,
+          name: 'Auckland Central Library',
+          description:
+            'Central City Library is home to the Sir George Grey Special Collections. These heritage items and resources include significant New Zealand publications, Shakespeare’s first folio, a William Blake manuscript engraved by the poet himself, as well as maps, music, whakaahua, ephemera and valuable rare books.',
+          address: '44-46 Lorne St Auckland',
+          opening_hours: 'Sat-Sun 10am-5pm, Mon-Fri 9am-8pm',
+          website_url:
+            'https://www.aucklandlibraries.govt.nz/pages/library.aspx?library=6&libraryname=Central%20City%20Library',
+          image: '/images/aucklandlibrary.jpg',
+          wheelchair_compatible: 1,
+          ramps: 1,
+          elevator: 1,
+          accessible_toilets: 1,
+          region_id: 3,
+          region_name: 'central',
+        },
+        {
+          id: 6,
+          name: 'Aotea Centre',
+          description:
+            'The Aotea Centre is a performing arts and events centre in Auckland, New Zealand. Located at the western edge of Aotea Square, off Queen Street, the centre provides a cultural, entertainment and conventions venue space in the heart of the city, and is managed by Auckland Unlimited.',
+          address: '50 Mayoral Drive, Auckland CBD, Auckland 1010',
+          opening_hours: 'Varies according to events',
+          website_url:
+            'https://www.aucklandlive.co.nz/venue/aotea-centre?utm_source=google&utm_medium=mybusiness&utm_campaign=gmb_aotea_centre',
+          image: '/images/aoteacentre.jpg',
+          wheelchair_compatible: 1,
+          ramps: 1,
+          elevator: 1,
+          accessible_toilets: 1,
+          region_id: 3,
+          region_name: 'central',
+        },
+        {
+          id: 7,
+          name: 'Auckland Art Gallery Toi o Tāmaki',
+          description:
+            'Auckland Art Gallery Toi o Tāmaki is the principal public gallery in Auckland, New Zealand. It has the most extensive collection of national and international art in New Zealand and frequently hosts travelling international exhibitions.',
+          address: ' Wellesley Street East, Auckland CBD, Auckland 1010',
+          opening_hours: 'Sat-Fri 10am-5pm',
+          website_url: 'https://www.aucklandartgallery.com/',
+          image: '/images/aucklandartgallery.jpg',
+          wheelchair_compatible: 1,
+          ramps: 1,
+          elevator: 1,
+          accessible_toilets: 1,
+          region_id: 3,
+          region_name: 'central',
+        },
       ])
     })
 }
