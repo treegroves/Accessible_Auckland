@@ -1,0 +1,51 @@
+.locationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img{ 
+      width: 100vw;
+      height: 500px;
+      object-fit: cover;
+    }
+}
+
+.locationInfo{
+  width: 50%;
+  padding-left: 3vw;
+  padding-right: 3vw;
+ 
+}
+
+
+.infoContainer {
+display: flex;
+flex-basis: auto;
+flex-direction: row-reverse;
+align-items: flex-start;
+justify-content: center;
+margin-top: 3vh;
+margin-bottom: 5vh;
+}
+
+.facilitiesCard{
+  border: rgb(161, 159, 159) solid 1px 0.2 ;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.1);
+
+  h4{
+text-align: center;
+
+}
+  .tick{
+    font-weight: 900;
+    color: rgb(6, 250, 6);
+    }
+    .cross{
+    font-weight: 900;
+    color: rgb(255, 17, 0);
+    }
+}
